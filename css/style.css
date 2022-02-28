@@ -162,8 +162,19 @@
 }
 
 .slide1, .slide2, .slide3{
-    background: url('../img/slides/slide1.jpg') no-repeat;
     background-size: cover;
+}
+
+.slide1{
+    background: url('../img/slides/slide1.jpg') no-repeat;
+}
+
+.slide2{
+    background: url('../img/slides/slide2.jpg') no-repeat;
+}
+
+.slide3{
+    background: url('../img/slides/slide3.jpg') no-repeat;
 }
 
 .swiper__slider-txt{
@@ -222,14 +233,17 @@
     width: 70%;
 }
 
-.about-us-txt__heading{
+.heading{
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
+}
+
+.about-us-txt__heading{
     margin-bottom: 20px;
 }
 
-.about-us-txt__text{
+.just-text{
     font-size: 16px;
     line-height: 20px;
 }
@@ -290,10 +304,13 @@
     margin-right: 50px;
 }
 
-.card-txt__heading{
+.title{
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
+}
+
+.card-txt__heading{
     margin-bottom: 8px;
 }
 
@@ -302,3 +319,99 @@
     line-height: 20px;
 }
 
+/* How we work */
+.how-work{
+
+}
+
+.how-work__heading{
+    margin-bottom: 50px;
+}
+
+.work-steps{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.work-step{
+    margin-right: 85px;
+    font-size: 18px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.work-step-active{
+    color: #E1670E;
+}
+
+.work-step:last-child{
+    margin-right: 0;
+}
+
+.consult-block{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 7%;
+}
+
+.consult-txt__title{
+    margin-bottom: 8px;
+}
+
+.consult-txt__text{
+    margin-bottom: 50px;
+}
+
+.consult-btns{
+    display: flex;
+    align-items: center;
+}
+
+.more-btn{
+    margin-right: 32px;
+    background-color: #FF9900;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+
+.more-btn:hover, .more-btn:focus{
+    background-color: #F7B045;
+}
+
+.more-btn:active{
+    background-color: #E1670E;
+}
+
+.deal-btn:hover, .deal-btn:focus{
+    background-color: #666666;
+    color: #fff;
+}
+
+.deal-btn:active{
+    background-color: #000;
+    color: #fff;
+}
+
+
+.deal-btn{
+    color: #333333;
+    font-size: 16px;
+    border: 1px solid #333333;
+    background: transparent;
+
+}
+
+.consult-btns__consult-btn{
+    cursor: pointer;
+    padding: 20px 38px;
+}
+
+.consult-block__img{
+    width: 870px; 
+}
