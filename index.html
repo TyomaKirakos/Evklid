@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Евклид</title>
     <link rel="stylesheet" href="css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -49,12 +54,24 @@
             </nav>
         </div>
     </header>
-    <!-- <main class="container">
-        <div class="slider">
-            <h1 class="slider__title">Проектные решения любой сложности</h1>
-            <p class="slider__sub-title">Проектные решения любой сложности</p>
-            <button class="slider__button">Заказать расчёт</button>
+    <main class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <div class="swiper__slider-txt">
+                <h1 class="slider-txt__title">Проектные решения любой сложности</h1>
+                <p class="slider-txt__sub-title">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+                <button class="slider-txt__button">Заказать расчёт</button>
+            </div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slide1"></div>
+                <div class="swiper-slide slide2"></div>
+                <div class="swiper-slide slide3"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-    </main> -->
+    </main>
 </body>
 </html>
