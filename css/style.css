@@ -8,7 +8,7 @@
 }
 
 .container{
-    max-width: 1770px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -321,7 +321,7 @@
 
 /* How we work */
 .how-work{
-
+    margin-bottom: 55px;
 }
 
 .how-work__heading{
@@ -332,7 +332,6 @@
     list-style: none;
     display: flex;
     align-items: center;
-    margin-bottom: 45px;
 }
 
 .work-step{
@@ -340,6 +339,15 @@
     font-size: 18px;
     color: #333333;
     cursor: pointer;
+}
+
+.work-step:hover{
+    color: #FF9900;
+}
+
+.work-step_focus{
+    padding: 5px;
+    border: 2px solid #FF9900;
 }
 
 .work-step-active{
@@ -356,6 +364,7 @@
     width: 100%;
     justify-content: space-between;
     column-gap: 7%;
+    margin-bottom: 100px;
 }
 
 .consult-txt__title{
@@ -415,3 +424,67 @@
 .consult-block__img{
     width: 870px; 
 }
+
+/* Блок с часто задаваемыми вопросами */
+
+.often-questions__heading{
+    margin-bottom: 32px;
+}
+
+.questions-block__question-block{
+    border-top: 1px solid #CACACA;
+    border-bottom: 1px solid #CACACA;
+    padding: 40px 0px;
+    cursor: pointer;
+}
+
+.questions-block__question-block:hover, .questions-block__question_active{
+    border-top: 1px solid #FF9900;
+    border-bottom: 1px solid #FF9900;
+    color: #FF9900;
+}
+
+.question-block__question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questions-block__question-block:hover  .question__btn{
+    background-color: #FF9900;
+    color: #fff;
+}
+
+.question__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 70px;
+    font-weight: 100;
+    background-color: #ECECEC;
+    color: #666666;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: transform .1s linear;
+    -webkit-transition: transform .1s linear;
+    -moz-transition: transform .1s linear;
+    -ms-transition: transform .1s linear;
+    -o-transition: transform .1s linear;
+}
+
+.question__btn_active{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+
