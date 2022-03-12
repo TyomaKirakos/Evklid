@@ -150,6 +150,7 @@
 /* slider */
 
 .swiper{
+    margin: 0 auto;
     width: 100%;
     height: 600px;
     padding: 100px 80px 30px;
@@ -427,6 +428,10 @@
 
 /* Блок с часто задаваемыми вопросами */
 
+.often-questions{
+    margin-bottom: 100px;
+}
+
 .often-questions__heading{
     margin-bottom: 32px;
 }
@@ -487,4 +492,142 @@
     -o-transform: rotate(45deg);
 }
 
+/* Футер */
+
+.footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #222222;
+}
+
+.footer__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo__img{
+    width: 224px;
+    margin-bottom: 20px;
+}
+
+.foot-items{
+    list-style: none;
+    margin-bottom: 90px;
+}
+
+.foot-items__foot-item{
+    line-height: 36px;
+}
+
+.foot-item__link{
+    text-decoration: none;
+    color: #CACACA;
+}
+
+.foot-item__link:hover{
+    color: #FF9900;
+}
+
+.foot-item__link_active{
+    color: #E1670E;
+}
+
+.foot-item__link:focus{
+    border: 2px solid #FF9900;
+    padding: 5px 0px;
+}
+
+.networks{
+    display: flex;
+    align-items: center;
+}
+
+.netwroks__network{
+    width: 60px;
+    margin-right: 25px;
+}
+
+.netwroks__network:last-child{
+    margin-right: 0;
+}
+
+.footer__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__heading{
+    color: #CACACA;
+    margin-bottom: 25px;
+}
+
+.form__input{
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 14px 24px;
+    background-color: #414141;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #CACACA;
+    resize: none
+}
+
+.form__input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    color: #CACACA;
+}
+
+.msg-input{
+    height: 150px;
+}
+
+.form__end{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.end__submit-btn{
+    padding: 19px 52px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #FF9900;
+    border: none;
+    outline: none;
+    margin-right: 22px;
+}
+
+.end__submit-btn:hover, .end__submit-btn:focus{
+    background-color: #F7B045;
+}
+
+.end__submit-btn:active{
+    background-color: #E1670E;
+}
+
+.end__checkbox{
+    margin-right: 5px;
+}
+
+.end__label{
+    font-weight: 400;
+    font-size: 16px;
+    color: #CACACA;
+}
+
+.footer__motto{
+    flex-basis: 25%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #CACACA;
+}
 
