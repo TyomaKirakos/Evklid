@@ -47,13 +47,13 @@ const swiper = new Swiper('.swiper', {
 
 openSearchBtn.addEventListener('click', () => {
     openSearchBtn.style.display = 'none';
-    navItems.style.display = 'none';
+    navItems.classList.add('nav_hidden');
     searchArea.style.display = 'block';
 });
 
 closeSearchBtn.addEventListener('click', (e) => {
     openSearchBtn.style.display = 'block';
-    navItems.style.display = 'flex';
+    navItems.classList.remove('nav_hidden');
     searchArea.style.display = 'none';
     e.preventDefault();
 })
@@ -86,15 +86,19 @@ questionBlocks.forEach(block => {
             questionText2.textContent = 'Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.';
             questionText1.classList.add('question-body');
             questionText2.classList.add('question-body');
+            let questionName = block.querySelector('.question-block__question');
 
             if (btn.classList.contains('question__btn_active')){
                 if (block.classList.contains('question' + i)){
+                    questionName.style.marginBottom = '30px';
                     block.append(questionText1);
                     block.append(questionText2);
                 }
             } else{
                 let questionTexts = block.querySelectorAll('.question-body');
                 questionTexts[0].remove();
+                questionTexts[1].remove();
+                questionName.style.marginBottom = '0px';
             }
         }
     })
