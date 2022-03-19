@@ -79,12 +79,25 @@ questionBlocks.forEach(block => {
     block.addEventListener('click', () => {
         let btn = block.querySelector('.question__btn');
         btn.classList.toggle('question__btn_active');
+        for (let i=1; i <= questionBlocks.length; i++){
+            let questionText1 = document.createElement("p");
+            questionText1.textContent = 'Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.';
+            let questionText2 = document.createElement("p");
+            questionText2.textContent = 'Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.';
+            questionText1.classList.add('question-body');
+            questionText2.classList.add('question-body');
+
+            if (btn.classList.contains('question__btn_active')){
+                if (block.classList.contains('question' + i)){
+                    block.append(questionText1);
+                    block.append(questionText2);
+                }
+            } else{
+                let questionTexts = block.querySelectorAll('.question-body');
+                questionTexts[0].remove();
+            }
+        }
     })
 });
 
-// window.addEventListener('click', (e) => {
-//     if (e.target.classList.contains('question__btn')){
-        
-//     }
-// })
 

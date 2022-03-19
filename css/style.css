@@ -423,7 +423,7 @@
 }
 
 .consult-block__img{
-    width: 870px; 
+    width: 60%; 
 }
 
 /* Блок с часто задаваемыми вопросами */
@@ -485,11 +485,15 @@
 }
 
 .question__btn_active{
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+
+.question-body:not(:last-child){
+    margin-bottom: 20px;
 }
 
 /* Футер */
@@ -574,7 +578,16 @@
     font-weight: 400;
     font-size: 16px;
     color: #CACACA;
-    resize: none
+    resize: none;
+}
+
+.form__input:hover, .form__input:focus{
+    background-color: #666666;
+}
+
+.form__input:active{
+    background-color: #666666;
+    color: #fff;
 }
 
 .form__input::placeholder{
@@ -603,6 +616,7 @@
     border: none;
     outline: none;
     margin-right: 22px;
+    cursor: pointer;
 }
 
 .end__submit-btn:hover, .end__submit-btn:focus{
@@ -630,4 +644,7 @@
     line-height: 32px;
     color: #CACACA;
 }
+
+
+
 
